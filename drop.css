@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    background: url('body.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+ul{
+    list-style-type: none;
+    background-color: transparent;
+    color: white;
+ 
+    
+}
+ul li{
+    display: inline;
+    padding: 10px;
+}
+ul li:hover{
+    background-color: green;
+    color: white;
+}
+.dropdown{
+    display: none;
+}
+ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    margin-left: 145px;
+    margin-top: 0.26cm;
+    
+}
+.dropdown ul{
+   
+    margin: 0;
+    padding: 0;
+}
+.dropdown ul li{
+    display: block;
+}
+.dropdown2{
+    display: none;
+}
+.dropdown ul li:hover .dropdown2{
+    display: block;
+    position: absolute;
+    margin-left: 140px;
+    margin-top: -28.4px;
+}

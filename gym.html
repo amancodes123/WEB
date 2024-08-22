@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Gym</title>
+    <link rel="stylesheet" href="gym.css">
+    <link href="http://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d747f61efb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <!-- Left box for logo -->
+            <div class="left">
+                <i class="fa-solid fa-dumbbell fa-2xl" style="color: #0d0d0d;"></i>
+                <!-- <img src="https://w7.pngwing.com/pngs/607/314/png-transparent-dumbbell-computer-icons-weight-training-dumbbell-angle-physical-fitness-text-thumbnail.png" alt=""> -->
+                <div> Aman Fitness</div>
+            </div>
+            <!-- Mid box for navbar -->
+            <div class="mid">
+                <ul class="navbar">
+                    <li><a href="#" class="activehome">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Fitness Calculator</a></li>
+                    <li><a href="#">Contact US</a></li>
+                </ul>
+            </div>
+            <!-- Right box for button -->
+            <div class="right">
+                <button id="btn">Call Us</button>
+                <button id="btn">Email Us</button>
+                <button id="btn" class="btnLogin">Login</button>
+            </div>
+        </header>
+        <div class="homedata">
+            <h1 >Welcome to Aman Fitness Gym</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic qui libero vero fugiat quam ipsum fugit error expedita, recusandae dolorem labore velit iste itaque natus, nisi numquam voluptas tenetur. Assumenda.
+            Aut similique, numquam, esse, rerum dolorum sint corrupti nulla eligendi pariatur possimus cupiditate asperiores cum quos porro quis! Dicta veniam eligendi vel ut! Eligendi veritatis voluptatibus dolorem vel nulla qui?
+            Aliquid iusto consequuntur voluptas ad architecto alias, veniam omnis officia illo praesentium provident quia ducimus soluta sit modi aperiam accusamus velit eos consequatur recusandae harum? Eos sapiente ab amet blanditiis!
+            Reiciendis distinctio, vel veniam asperiores pariatur consequatur illo voluptatibus impedit laboriosam, et facilis eius repellat quae itaque laudantium dignissimos? Quam velit dignissimos iure sint assumenda voluptates eum debitis tenetur? Minima.
+            Dolore tempora incidunt modi, corporis similique architecto culpa perferendis. Dolore doloribus repellat possimus ut magni quas consequuntur sit rerum distinctio atque, vitae reiciendis suscipit, a, dignissimos nulla molestias doloremque earum!
+            Eaque veritatis nobis repellat consectetur exercitationem quo tempora ratione. Rerum dicta accusamus explicabo neque ducimus, excepturi labore dignissimos cupiditate maiores sapiente distinctio error animi culpa! Sapiente explicabo saepe est tempore!
+            Aliquid quo nisi in blanditiis laborum accusamus, dolore nobis veritatis odio doloremque magnam dolor numquam dicta sapiente ducimus assumenda maiores! Optio, quos omnis. Est delectus animi dolorum! Exercitationem, accusantium doloribus?
+            Dolorum veniam numquam explicabo facilis placeat error esse ex expedita debitis voluptatibus culpa nobis at laborum maiores, tempora soluta! Veritatis non error excepturi maxime possimus. Deserunt iste fuga earum mollitia.
+            Sequi, earum doloremque tempore sed asperiores harum amet magni consequuntur neque qui repudiandae mollitia eligendi reprehenderit natus hic. Corporis, amet odit. Necessitatibus ullam iusto sapiente commodi vitae perferendis, cum aliquid.
+            Ipsa dolorum aspernatur a odio, quae autem quis labore recusandae cumque non voluptatibus. Libero eos tempora aspernatur ducimus doloribus iusto, alias soluta placeat ea sed similique, explicabo deserunt exercitationem aut?
+            </p>
+        </div>
+        <div class="container">
+            <span class="icon-close">
+                <ion-icon name="close-outline"></ion-icon>
+            </span>
+            <h1>Join The Best Gym Of Tumsar Now</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Gender">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Locality">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Email Id">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Phone Number">
+                </div>
+                <button id="btn">Submit</button>
+            </form>
+        </div>
+        
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        const wrapper = document.querySelector('.wrapper');
+        const container = document.querySelector('.container');
+        const btnPopup = document.querySelector('.btnLogin');
+        const iconClose = document.querySelector('.icon-close');
+        const home = document.querySelector('.activehome');
+        const homedata = document.querySelector('.wrapper .homedata');
+        console.log("Hello World");
+
+        btnPopup.addEventListener('click', () => {
+           console.log("Hello pop World");
+            container.classList.add('active-popup');
+        });
+
+        iconClose.addEventListener('click', () => {
+           console.log("Hello World");
+            container.classList.remove('active-popup');
+        });
+
+        home.addEventListener('click', ()=>{
+            console.log("hello");
+            homedata.classList.add('active');
+        });
+
+        // $('.activehome').click(function(){
+        //     console.log("hello");
+        //     $('.wrapper .homedata').addClass('active')
+        // });
+
+
+    </script>
+</body>
+
+</html>

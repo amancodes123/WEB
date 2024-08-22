@@ -1,0 +1,49 @@
+
+h1.logo{
+margin: 0 0 0 5px;
+padding: 0;
+font-size: 180%;
+text-transform: uppercase;
+background: url("main1.png") no-repeat top right;
+height: 120px;
+position:relative;
+
+
+}
+h1.logo a {
+       width: 697px;
+    display: block;
+    background: url("logo2.png") no-repeat;
+    height: 120px;
+    position: relative;
+    z-index: 100;
+}
+#ja-headerweap{
+    background: #333333;
+    color: #cccccc;
+    line-height: normal;
+    height: 120px;
+   width: 1519.200;
+}
+div{
+    display: block;
+}
+div{
+ font-size: 100%;
+}
+#ja-header{
+    width: 97%;
+    margin: 0 auto;
+    position: relative;
+    height: 120px;
+}
+#ja-mainnavwrap{
+    border-top: 2px solid #bf966b;
+}
+#ja-mainnav{
+    width: 97%;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 20px;
+    
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="a1.css">
+</head>
+
+<body>
+    <div class="box" style="background-color: blue;">
+        <P>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, illum beatae quis expedita saepe ducimus
+            nobis itaque praesentium, dolorem officia veritatis aspernatur dignissimos, atque laboriosam dolor quia non
+            harum impedit.*5
+        </P>
+    </div>
+    
+    <h1 class="heading"> welcome to my web-site</h1>
+    <button id="mode">Change mode</button>
+    <br>
+    <div>
+      
+    </div>
+</body>
+
+<script>
+    let modeBtn = document.querySelector("#mode");
+    let currMode = "light";
+    let body = document.querySelector("body");
+
+    modeBtn.addEventListener("click", () => {
+        if (currMode == "light") {
+            currMode = "dark";
+            body.classList.add("dark");
+            body.classList.remove("light");
+        } else {
+            currMode = "light";
+            body.classList.add("light");
+            body.classList.remove("dark");
+        }
+    }
+    );
+</script>
+
+</html>

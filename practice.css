@@ -1,0 +1,60 @@
+h1 {
+  color: red;
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  display: inline;
+  text-decoration: underline;
+}
+p {
+  color: rgb(255, 0, 0);
+  background-color: #fff;
+  font-weight: 400;
+}
+#box {
+  background-color: pink;
+  font-family: arial, roboto;
+  line-height: 20px;
+  text-transform: capitalize;
+  text-align: center;
+  height: 25px;
+  width: 500px;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 50px;
+}
+button {
+  background-color: green;
+  font-size: 20px;
+}
+header {
+  height: 60px;
+  background-color: #0f1111;
+  color: #fff;
+  font-size: 25px;
+  padding-top: 20px;
+}
+.logo {
+  font-size: 25px;
+  color: pink;
+  text-align: right;
+  text-decoration: underline;
+}
+a {
+  margin: 20px;
+  text-decoration: none;
+}
+#b1 {
+  color: #fff;
+  background-color: #f08804;
+  border-radius: 15px;
+  margin-left: 2px;
+}
+#search {
+  width: 90px;
+  border: 2px solid black;
+  border-radius: 20px;
+  height: 30px;
+  text-align: center;
+}

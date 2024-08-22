@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+
+<body>
+    <h1>Welcome to this JavaScript Tutorial</h1>
+    <div id="firstcontainer" onclick="click" class="container">
+        <p>this Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci et ad blanditiis dolorem, quasi
+            quisquam corrupti, doloribus hic fuga ex facere odit exercitationem ipsa sunt est perferendis aperiam quod
+            deleniti!
+
+        </p>
+        <button id="mode">Click Me</button>
+    </div>
+    <div class="container">
+        <p>This is a paragraph</p>
+    </div>
+    <style>
+        .light{
+    backgroundColor : white;
+    color:black;
+}
+.dark{
+    backgroundColor : black;
+    color : white;
+}
+    </style>
+
+    <script>
+        // console.log("Hello World");
+        // //alert("me");
+        // function clicked() {
+        //     console.log('The button was clicked')
+        // }
+        // window.onload = function () {
+        //     console.log('The document was loaded')
+        // }
+
+        // firstcontainer.addEventListener('click', function () {
+        //     console.log("Click hua");
+        // })
+
+        // firstcontainer.addEventListener('mouseover', function () {
+        //     console.log("mouse over");
+        // })
+
+        let modeBtn = document.querySelector("#mode");
+        let currMode = "light";
+        let body = document.querySelector("body");
+
+        modeBtn.addEventListener("click", ()=>{
+        if (currMode == "light" ){
+            currMode = "dark";
+            console.log("hello")
+            body.classList.add("dark");
+        }else {
+            currMode = "light";
+            body.classList.add("light");
+        }
+    }
+        );
+    </script>
+</body>
+
+</html>
